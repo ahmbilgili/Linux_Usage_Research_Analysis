@@ -25,7 +25,5 @@ As a Linux user, hearing people stating that users are switching from windows to
 </ul>
 
 ## Data Collection  
-- Data of OS Market Shares from 2009 to 2025 will be used for analyzing previous and current trends of linux and windows usage, in order to understand whether if there is a significant change in market shares.
-- I believe that there's a close correlation between number of open source repositories and linux user count, so the number of repositories in GitHub that include the keywords such as "linux" and "open source" from the same period will be analyzed for further investigation, via GitHub Archive.
-- Wikimedia Pageviews API will be used for analyzing number of pageviews in topics such as "ubuntu", "mint", "debian", "fedora" and "open source", which are concepts related to linux, since increased/decreased interest in these topics possibly corresponds to increased/decreased interest in using linux systems, which will help in analyzing the current user base.
-- I'm planning to utilize selenium for automated data collection from Wikimedia API and GitHub Archive.  
+- Data of OS Market Shares from 2009 to 2025 is collected from <li>https://gs.statcounter.com/os-market-share/desktop/worldwide</li>. 
+- Data of pageviews for wikipedia pages with keywords "Linux", "Debian", "Ubuntu", "Red Hat Enterprise Linux", "Windows XP", "Windows 7", "Windows 8", "Windows 8.1", "Windows Vista", "Windows 10" within the range July 2015 - November 2025 are obtained, using <li>https://pageviews.wmcloud.org/</li>. 
