@@ -25,5 +25,5 @@ As a Linux user, hearing people stating that users are switching from windows to
 </ul>
 
 ## Data Collection  
-- Data of OS Market Shares from 2009 to 2025 is collected from <li>https://gs.statcounter.com/os-market-share/desktop/worldwide</li>. 
-- Data of pageviews for wikipedia pages with keywords "Linux", "Debian", "Ubuntu", "Red Hat Enterprise Linux", "Windows XP", "Windows 7", "Windows 8", "Windows 8.1", "Windows Vista", "Windows 10" within the range July 2015 - November 2025 are obtained, using <li>https://pageviews.wmcloud.org/</li>. 
+- Data of OS Market Shares from 2009 to 2025 is collected from https://gs.statcounter.com/os-market-share/desktop/worldwide  
+- Data of pageviews for wikipedia pages named <strong>Linux</strong>, <strong>Debian</strong>, <strong>Ubuntu</strong>, <strong>Red Hat Enterprise Linux</strong>, <strong>Windows XP</strong>, <strong>Windows 7</strong>, <strong>Windows 8</strong>, <strong>Windows 8.1</strong>, <strong>Windows Vista</strong>, <strong>Windows 10</strong> within the range July 2015 - November 2025 are obtained, from https://pageviews.wmcloud.org/  
