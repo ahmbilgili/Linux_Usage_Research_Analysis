@@ -7,8 +7,8 @@ With the discontinuation of Windows 10 support from Microsoft, the current users
 As a Linux user, hearing people stating that users are switching from windows to linux due to recent end of support decision from Microsoft is an interesting take, and since there is no such official statistic regarding this topic, I decided to conduct my own research using various datasets.
 
 <h2>Hypotheses</h2>
-**H0 (Null Hypothesis)**: The end of support for Windows operating system versions does not lead to a increase in Linux usage.  
-**H1 (Alternative Hypothesis)**: The end of support for Windows operating system versions leads to a increase in Linux usage.
+<strong>H0 (Null Hypothesis)</strong>: The end of support for Windows operating system versions does not lead to a increase in Linux usage.  
+<strong>H1 (Alternative Hypothesis)</strong>: The end of support for Windows operating system versions leads to a increase in Linux usage.
 
 <h2>Data Source</h2>
 <strong>Desktop OS Market Shares (2009-2025)</strong>
