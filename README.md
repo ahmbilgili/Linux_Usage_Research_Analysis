@@ -7,8 +7,8 @@ With the discontinuation of Windows 10 support from Microsoft, the current users
 As a Linux user, hearing people stating that users are switching from windows to linux due to recent end of support decision from Microsoft is an interesting take, and since there is no such official statistic regarding this topic, I decided to conduct my own research using various datasets.
 
 <h2>Hypotheses</h2>
-<strong>H0 (Null Hypothesis)</strong>: The end of support for Windows operating system versions does not lead to a increase in Linux usage.  
-<strong>H1 (Alternative Hypothesis)</strong>: The end of support for Windows operating system versions leads to a increase in Linux usage.
+<strong>H0 (Null Hypothesis)</strong>: The end of support for Windows operating system versions does not lead to a increase in Linux usage.<br>
+<strong>H1 (Alternative Hypothesis)</strong>: The end of support for Windows operating system versions leads to a increase in Linux usage.  
 
 <h2>Data Source</h2>
 <strong>Desktop OS Market Shares (2009-2025)</strong>
@@ -24,14 +24,25 @@ As a Linux user, hearing people stating that users are switching from windows to
   <li><a>https://pageviews.wmcloud.org/</a></li>
 </ul>
 
-<h2>Data Collection and Preprocessing</h2>
+<h2>Data Collection</h2>
 <ol>
   <li> Data of OS Market Shares from 2009 to 2025 is collected from <a>https://gs.statcounter.com/os-market-share/desktop/worldwide</a>. Multiple csv files with varying categories are obtained, which are combined into a single .csv file (named <strong>2009_2025_combined_out.csv</strong>) using combine_marketshare_csv.py script.</li> 
-  <li>Data of pageviews for wikipedia pages named <strong>Linux</strong>, <strong>Debian</strong>, <strong>Ubuntu</strong>, <strong>Red Hat Enterprise Linux</strong>, <strong>Windows XP</strong>, <strong>Windows 7</strong>, <strong>Windows 8</strong>, <strong>Windows 8.1</strong>, <strong>Windows Vista</strong>, <strong>Windows 10</strong> within the range July 2015 - November 2025 are obtained from <a>https://pageviews.wmcloud.org/.</a></li>
+  <li>For each day, number of pageviews for wikipedia pages named <strong>Linux</strong>, <strong>Debian</strong>, <strong>Ubuntu</strong>, <strong>Red Hat Enterprise Linux</strong>, <strong>Windows XP</strong>, <strong>Windows Vista</strong> <strong>Windows 7</strong>, <strong>Windows 8</strong>, <strong>Windows 8.1</strong>, <strong>Windows 10</strong> within the range July 2015 - November 2025 are obtained from <a>https://pageviews.wmcloud.org/.</a></li>
+</ol>
+
+<h2>Data Preprocessing</h2>
+<ol>
+  <li>Redundant columns (OS X, Nintendo, PlayStation and any column that isn't windows nor linux) from the OS market shares dataset are removed.</li>
+  <li>Columns with only NULL values are removed.</li>
+  <li>Due to lack of data for the year 2014, data of Windows XP is removed from pageviews dataset.</li>
 </ol>
 
 <h2>Exploratory Data Analysis</h2>
 <ol>
-  <li>Redundant columns (OS X, Nintendo, PlayStation and any column that isn't windows nor linux) are removed.</li>
-  <li>Columns with only NULL values are removed.</li>
+  <li>Windows market share declines gradually, despite rare increases in a few periods.</li>
+  <li>Linux market share increases steadily, despite some declines in a few periods.</li>
+  <li>Mean of Windows market share throughout the years is found to be 83.144427%</li>
+  <li>Mean of Linux market share throughout the years is found to be 1.704948%</li>
+  <li>There is a spike in pageviews count of Windows Vista around the end of support date (April 11, 2017)</li>
+  <li>There is a spike in pageviews count of Windows 7 around the end of support date (January 14, 2020)</li>
 </ol>
