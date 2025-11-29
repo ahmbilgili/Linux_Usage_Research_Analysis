@@ -38,16 +38,46 @@ As a Linux user, hearing people stating that users are switching from windows to
 </ol>
 
 <h2>Exploratory Data Analysis</h2>
+<h3>Visual Analysis</h3>
 <ol>
   <li>Windows market share declines gradually, despite rare increases in a few periods.</li>
   <li>Linux market share increases steadily, despite some declines in a few periods.</li>
   <li>A moderately linear, negative relationship is seen between Linux market share and Windows market share</li>
-  <li>Mean of Windows market share throughout the years is found to be 83.144427%</li>
-  <li>Mean of Linux market share throughout the years is found to be 1.704948%</li>
   <li>There is a spike in pageviews count of Windows Vista around the end of support date (April 11, 2017)</li>
   <li>There is a spike in pageviews count of Windows 7 around the end of support date (January 14, 2020)</li>
   <li>There is a spike in pageviews count of Windows 8.1 around the end of support date (January 10, 2023)</li>
   <li>There is a spike in pageviews count of Windows 10 around end of the support date (October 10, 2025)</li>
-  <li>The heatmap of pageviews</li>
+  <li>The heatmap of pageviews is as follows:</li>
   <img src="visuals/heatmap_pageviewsdata.svg" alt="heatmap_pageviews_data">
+</ol>
+
+<h3>Statistical Analysis</h3>
+<ol>
+  <li>Mean of Windows market share throughout the years is found to be 83.144427%</li>
+  <li>Mean of Linux market share throughout the years is found to be 1.704948%</li>
+  <table>
+    <tr>
+        <th>Null Hypothesis</th>
+        <th>Alternative Hypothesis</th>
+        <th>Test Used</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+      <td>End of support for windows 7 did not lead to an increase in pageview count of linux</td>
+      <td>End of support for windows 7 lead to an increase in pageview count of linux</td>
+      <td>Mann-Whitney U-test (Data is not normally distributed, non-parametric)</td>
+      <td>p-value of 6.43e-92 is obtained, reject null hypothesis</td>
+    </tr>
+    <tr>
+      <td>End of support for windows 8.1 did not lead to an increase in pageview count of linux</td>
+      <td>End of support for windows 8.1 lead to an increase in pageview count of linux</td>
+      <td>Mann-Whitney U-test</td>
+      <td>p-value of 5.21e-102 is obtained, reject null hypothesis</td>
+    </tr>
+    <tr>
+      <td>End of support for windows 10 did not lead to an increase in pageview count of linux</td>
+      <td>End of support for windows 10 lead to an increase in pageview count of linux</td>
+      <td>Mann-Whitney U-test</td>
+      <td>p-value of 8.51e-15 is obtained, reject null hypothesis</td>
+    </tr>
 </ol>
