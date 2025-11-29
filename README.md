@@ -13,21 +13,19 @@ As a Linux user, hearing people stating that users are switching from windows to
 <h2>Data Source</h2>
 <strong>Desktop OS Market Shares (2009-2025)</strong>
 <ul>
-  <li><a>https://gs.statcounter.com/os-market-share/desktop/worldwide</a></li>
+  <li><a href="https://gs.statcounter.com/os-market-share/desktop/worldwide">https://gs.statcounter.com/os-market-share/desktop/worldwide</a></li>
 </ul> 
-<strong>GitHub Archive</strong>
-<ul>
-  <li><a>https://www.gharchive.org/</a></li>
-</ul>
+<strong>GitHub API</strong>
 <strong>Wikimedia Pageviews API</strong>
 <ul>
-  <li><a>https://pageviews.wmcloud.org/</a></li>
+  <li><a href="https://pageviews.wmcloud.org/">https://pageviews.wmcloud.org/</a></li>
 </ul>
 
 <h2>Data Collection</h2>
 <ol>
-  <li> Data of OS Market Shares from 2009 to 2025 is collected from <a>https://gs.statcounter.com/os-market-share/desktop/worldwide</a>. Multiple csv files with varying categories are obtained, which are combined into a single .csv file (named <strong>2009_2025_combined_out.csv</strong>) using combine_marketshare_csv.py script.</li> 
-  <li>For each day, number of pageviews for wikipedia pages named <strong>Linux</strong>, <strong>Debian</strong>, <strong>Ubuntu</strong>, <strong>Red Hat Enterprise Linux</strong>, <strong>Windows XP</strong>, <strong>Windows Vista</strong> <strong>Windows 7</strong>, <strong>Windows 8</strong>, <strong>Windows 8.1</strong>, <strong>Windows 10</strong> within the range July 2015 - November 2025 are obtained from <a>https://pageviews.wmcloud.org/.</a></li>
+  <li> Data of OS Market Shares from 2009 to 2025 is collected from <a href="https://gs.statcounter.com/os-market-share/desktop/worldwide">https://gs.statcounter.com/os-market-share/desktop/worldwide</a>. Multiple csv files with varying categories are obtained, which are combined into a single .csv file (named <strong>2009_2025_combined_out.csv</strong>) using combine_marketshare_csv.py script.</li> 
+  <li>For each day, number of pageviews for wikipedia pages named <strong>Linux</strong>, <strong>Debian</strong>, <strong>Ubuntu</strong>, <strong>Red Hat Enterprise Linux</strong>, <strong>Windows XP</strong>, <strong>Windows Vista</strong> <strong>Windows 7</strong>, <strong>Windows 8</strong>, <strong>Windows 8.1</strong>, <strong>Windows 10</strong> within the range July 2015 - November 2025 are obtained from <a href="https://pageviews.wmcloud.org/">https://pageviews.wmcloud.org/</a></li>
+  <li>Number of stars, watchers, owner username and URL of top 100 repositories for each month starting from January 2015 to November 2025, that include keyword "linux" are fetched with help of Github API, using scraper.py script. <strong>(DISCLOSURE)</strong> Scraper script is written with help of Gemini.
 </ol>
 
 <h2>Data Preprocessing</h2>
