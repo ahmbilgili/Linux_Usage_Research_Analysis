@@ -40,12 +40,12 @@ Data from multiple resources will be used to understand if there's a significant
   <li>Redundant columns (OS X, Nintendo, PlayStation and any column that isn't windows nor linux) from the OS market shares dataset are removed.</li>
   <li>Columns with only NULL values are removed from both OS market share dataset and wikipedia pagevisit counts dataset.</li>
   <li>Due to lack of data for the year 2014, data of Windows XP is removed from pageviews dataset.</li>
-  <li>Data from github repositories is aggregated with respect to month-year combinations. That is, star count for the given MM-YYYY is aggregated with help of pandas.
+  <li>Data from github repositories is aggregated with respect to month-year combinations. That is, star count for the given MM-YYYY is aggregated with help of pandas. Log-transformation will be applied when necessary (i.e., when using a parametric test), since the data is highly skewed.
 </ol>
 
 <h2>Exploratory Data Analysis</h2>
 <h3>Visual Analysis</h3>
-<ol>
+<ul>
   <li>Windows market share declines gradually, despite rare increases in a few periods.</li>
   <li>Linux market share increases steadily, despite some declines in a few periods.</li>
   <li>A moderately linear, negative relationship is seen between Linux market share and Windows market share</li>
@@ -53,12 +53,12 @@ Data from multiple resources will be used to understand if there's a significant
   <li>There is a spike in pageviews count of Windows 7 around the end of support date (January 14, 2020)</li>
   <li>There is a spike in pageviews count of Windows 8.1 around the end of support date (January 10, 2023)</li>
   <li>There is a spike in pageviews count of Windows 10 around end of the support date (October 10, 2025)</li>
-  <li>The heatmap of pageviews is as follows:</li>
-  <img src="visuals/heatmap_pageviewsdata.svg" alt="heatmap_pageviews_data">
-</ol>
+</ul>
 
 <h3>Statistical Analysis</h3>
 <ul>
+  <li>The heatmap of pageviews is as follows:</li>
+  <img src="visuals/heatmap_pageviewsdata.svg" alt="heatmap_pageviews_data">
   <li>Mean of Windows market share throughout the years is found to be 83.144427%</li>
   <li>Mean of Linux market share throughout the years is found to be 1.704948%</li>
   <table>

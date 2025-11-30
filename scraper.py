@@ -129,6 +129,7 @@ def main():
             if not GITHUB_TOKEN:
                 time.sleep(2) 
     idx = 0
+    
     with open("github_repos_stars_watchers.csv", "w") as out_file:
         writer = csv.writer(out_file)
         writer.writerow(["Year", "Month", "Day", "Name", "Stars", "Watchers", "URL"])
