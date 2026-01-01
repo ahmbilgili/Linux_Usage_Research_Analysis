@@ -103,20 +103,27 @@ Data from multiple resources will be used to understand if there's a significant
     <thead>
         <tr>
             <th>Y Value</th>
-            <th>R-Squared Score</th>
+            <th>R2 Score (Train)</th>
+            <th>R2 Score (Test)</th>
+            <th>RMSE Score (Train)</th>
+            <th>RMSE Score (Test)</th>         
             <th>RMSE</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Linux market share</td>
-            <td>0.9470</td>
-            <td>0.2079</td>
+            <td>0.9533</td>
+            <td>0.8768</td>
+            <td>0.2073</td>
+            <td>0.2206</td>
         </tr>
         <tr>
             <td>Windows market share</td>
-            <td>0.9418</td>
-            <td>1.9153</td>
+            <td>0.9530</td>
+            <td>0.9014</td>
+            <td>1.6983</td>
+            <td>2.6171</td>
         </tr>
     </tbody>
 </table>
