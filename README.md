@@ -84,7 +84,7 @@ Data from multiple resources will be used to understand if there's a significant
       <td>End of support for windows 10 did not lead to an increase in pageview count of linux</td>
       <td>End of support for windows 10 lead to an increase in pageview count of linux</td>
       <td>Mann-Whitney U-test (One-tailed)</td>
-      <td>p-value of 0.99is obtained, fail to reject null hypothesis</td>
+      <td>p-value of 0.99 is obtained, fail to reject null hypothesis</td>
     </tr>
     <tr>
       <td>End of support for windows 8.1 did not lead to an increase in total star count of repositories that include keyword "linux"</td>
@@ -96,3 +96,27 @@ Data from multiple resources will be used to understand if there's a significant
 </ul>
 
 <h4>The visuals and steps taken during whole EDA process can be seen via EDA.ipynb file.</h4>
+
+<h3>Machine learning methods</h3>
+<h4>Polynomial Regression</h4>
+<table>
+    <thead>
+        <tr>
+            <th>Y Value</th>
+            <th>R-Squared Score</th>
+            <th>RMSE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Linux market share</td>
+            <td>0.9470</td>
+            <td>0.2079</td>
+        </tr>
+        <tr>
+            <td>Windows market share</td>
+            <td>0.9418</td>
+            <td>1.9153</td>
+        </tr>
+    </tbody>
+</table>
