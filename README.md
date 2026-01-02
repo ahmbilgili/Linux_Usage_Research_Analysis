@@ -129,22 +129,29 @@ Goodness of fit is evaluated via R2 score, while average distance between predic
     </tbody>
 </table>
 <h3>Random Forest</h3>
-Accuracy is evaluated via MAE (Mean absolute error). Timestep is ignored to force the model for causality rather than looking at timesteps and memorizing.
+Predictions on change in market shares of windows and linux are predicted via Random Forest. Changes are calculated initially, and the model is trained with respect to the changes, and then real market share is rebuilt.
+Accuracy is evaluated via MAE (Mean absolute error).
 <table>
     <thead>
         <tr>
             <th>X, Y Value</th>
-            <th>MAE</th>       
+            <th>MAE</th>    
+            <th>R2 Score (Change)</th>
+            <th>R2 Score (Final)</th>   
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>[linux pageviews, debian pageviews, ubuntu pageviews, rhel pageviews], linux market share percentage</td>
-            <td>1.5949</td>
+            <td>0.19896</td>
+            <td>-0.18022</td>
+            <td>0.41966</td>
         </tr>
         <tr>
             <td>[windows 7 pageviews, windows 8 pageviews, windows 8.1 pageviews, windows vista pageviews, windows 10 pageviews], windows market share percentage</td>
-            <td>5.4514</td>
+            <td>1.43177</td>
+            <td>-0.02287</td>
+            <td>-0.82997</td>
         </tr>
     </tbody>
 </table>
