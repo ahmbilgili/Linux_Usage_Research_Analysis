@@ -139,11 +139,11 @@ Accuracy is evaluated via MAE (Mean absolute error). Timestep is ignored to forc
     </thead>
     <tbody>
         <tr>
-            <td>[linux pageviews, debian pageviews, ubuntu pageviews, rhel pageviews], linux marketshare percentage</td>
+            <td>[linux pageviews, debian pageviews, ubuntu pageviews, rhel pageviews], linux market share percentage</td>
             <td>1.5949</td>
         </tr>
         <tr>
-            <td>[windows 7 pageviews, windows 8 pageviews, windows 8.1 pageviews, windows vista pageviews, windows 10 pageviews], windows marketshare percentage</td>
+            <td>[windows 7 pageviews, windows 8 pageviews, windows 8.1 pageviews, windows vista pageviews, windows 10 pageviews], windows market share percentage</td>
             <td>5.4514</td>
         </tr>
     </tbody>
