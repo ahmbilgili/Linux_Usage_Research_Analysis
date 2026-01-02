@@ -97,8 +97,9 @@ Data from multiple resources will be used to understand if there's a significant
 
 <h4>The visuals and steps taken during whole EDA process can be seen via EDA.ipynb file.</h4>
 
-<h3>Machine learning methods</h3>
-<h4>Polynomial Regression</h4>
+<h2>Machine learning methods</h3>
+<h3>Polynomial Regression</h3>
+Goodness of fit is evaluated via R2 score, while average distance between predicted and real values is evaluated via RMSE.
 <table>
     <thead>
         <tr>
@@ -123,6 +124,26 @@ Data from multiple resources will be used to understand if there's a significant
             <td>0.9014</td>
             <td>1.6983</td>
             <td>2.6171</td>
+        </tr>
+    </tbody>
+</table>
+<h3>Random Forest</h3>
+Accuracy is evaluated via MAE (Mean absolute error)
+<table>
+    <thead>
+        <tr>
+            <th>X, Y Value</th>
+            <th>MAE</th>       
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>[Time step, linux pageviews, debian pageviews, ubuntu pageviews, rhel pageviews], linux marketshare</td>
+            <td>0.9702</td>
+        </tr>
+        <tr>
+            <td>[Time step, windows 7 pageviews, windows 8 pageviews, windows 8.1 pageviews, windows vista pageviews, windows 10 pageviews], windows marketshare</td>
+            <td>3.9804</td>
         </tr>
     </tbody>
 </table>
