@@ -99,6 +99,7 @@ Data from multiple resources will be used to understand if there's a significant
 
 <h2>Machine learning methods</h3>
 <h3>Polynomial Regression</h3>
+Data is splitted as 80% training, 20% testing.
 Goodness of fit is evaluated via R2 score, while average distance between predicted and real values is evaluated via RMSE.
 <table>
     <thead>
@@ -128,7 +129,7 @@ Goodness of fit is evaluated via R2 score, while average distance between predic
     </tbody>
 </table>
 <h3>Random Forest</h3>
-Accuracy is evaluated via MAE (Mean absolute error)
+Accuracy is evaluated via MAE (Mean absolute error). Timestep is ignored to force the model for causality rather than looking at timesteps and memorizing.
 <table>
     <thead>
         <tr>
@@ -138,12 +139,12 @@ Accuracy is evaluated via MAE (Mean absolute error)
     </thead>
     <tbody>
         <tr>
-            <td>[Time step, linux pageviews, debian pageviews, ubuntu pageviews, rhel pageviews], linux marketshare</td>
-            <td>0.9702</td>
+            <td>[linux pageviews, debian pageviews, ubuntu pageviews, rhel pageviews], linux marketshare percentage</td>
+            <td>1.5949</td>
         </tr>
         <tr>
-            <td>[Time step, windows 7 pageviews, windows 8 pageviews, windows 8.1 pageviews, windows vista pageviews, windows 10 pageviews], windows marketshare</td>
-            <td>3.9804</td>
+            <td>[windows 7 pageviews, windows 8 pageviews, windows 8.1 pageviews, windows vista pageviews, windows 10 pageviews], windows marketshare percentage</td>
+            <td>5.4514</td>
         </tr>
     </tbody>
 </table>
