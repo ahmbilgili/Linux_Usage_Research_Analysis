@@ -97,7 +97,7 @@ Data from multiple resources will be used to understand if there's a significant
 
 <h4>The visuals and steps taken during whole EDA process can be seen via EDA.ipynb file.</h4>
 
-<h2>Machine learning methods</h3>
+<h2>Machine learning methods</h2>
 <h3>Polynomial Regression</h3>
 Data is splitted as 80% training, 20% testing.
 Goodness of fit is evaluated via R2 score, while average distance between predicted and real values is evaluated via RMSE.
@@ -155,3 +155,43 @@ Accuracy is evaluated via MAE (Mean absolute error).
         </tr>
     </tbody>
 </table>
+
+<h2>Results</h2>
+<h3>1. Polynomial Regression Analysis</h3>
+<p>The Polynomial Regression model demonstrated a strong ability to capture the trend in market share over time for both operating systems. The model was trained on an 80% split of the dataset and evaluated on the remaining 20%.</p>
+<ul>
+  <li>
+    <strong>Linux Market Share:</strong> The model achieved a high goodness of fit, with a Training R2 of <strong>0.9533</strong> and a Test R2 of <strong>0.8768</strong>. The Root Mean Squared Error (RMSE) remained consistent between training (<strong>0.2073</strong>) and testing (<strong>0.2206</strong>), indicating that the model generalizes well and is not suffering from significant overfitting.
+  </li>
+  <li>
+    <strong>Windows Market Share:</strong> The model performed similarly well, yielding a Training R2 of <strong>0.9530</strong> and a Test R2 of <strong>0.9014</strong>. While the RMSE values (Train: <strong>1.6983</strong>, Test: <strong>2.6171</strong>) are numerically higher than those for Linux, this is attributable to the significantly larger scale of Windows market share percentage compared to Linux.
+  </li>
+</ul>
+<p>Overall, the Polynomial Regression approach proved effective, maintaining high accuracy and generalization capabilities across both target variables.</p>
+</section>
+
+<h3>2. Random Forest Analysis</h3>
+<p>The Random Forest model attempted to predict the <em>change</em> in market share using pageview data (e.g., Ubuntu, Windows 10 pageviews) as features, rather than predicting the raw market share directly. The final market share was then reconstructed from these predicted changes.</p>
+<ul>
+  <li>
+    <strong>Linux Prediction:</strong> The model struggled to capture the variance in market share changes, resulting in a negative R2 score for the change predictions (<strong>-0.1802</strong>). Consequently, the reconstructed final market share showed a moderate fit with an R2 of <strong>0.4197</strong> and a Mean Absolute Error (MAE) of <strong>0.199</strong>.
+  </li>
+  <li>
+    <strong>Windows Prediction:</strong> The model failed to predict market share changes effectively, by a negative R2 score for change (<strong>-0.0229</strong>). This inability to model the fluctuations led to a poor final reconstruction, resulting in a negative Final R2 of <strong>-0.8300</strong> and a MAE of <strong>1.43</strong>.
+  </li>
+</ul>
+<p>These results suggest that the pageview features utilized in the Random Forest model were insufficient for predicting short-term fluctuations (changes) in market share, leading to poor reconstruction of the overall trend.</p>
+
+<h2>Possible Improvements</h2>
+<ul>
+<li>More ML methods (such as Facebook Prophet) can be applied for variance.</li>
+<li>Feature count can be increased by consulting to more datasets, which can help in generating better results via ML methods.</li>
+</ul>
+
+<h2>Reproduction</h2>
+<ul>
+<li><code>python3 -m venv .venv</code></li>
+<li><code>source .venv/bin/activate</code></li>
+<li><code>pip install -r requirements.txt</code></li>
+<li><code>jupyter notebook</code></li>
+</ul>
