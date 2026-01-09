@@ -189,9 +189,10 @@ Accuracy is evaluated via MAE (Mean absolute error).
 </ul>
 
 <h2>Reproduction</h2>
-<ul>
+<ol>
 <li><code>python3 -m venv .venv</code></li>
 <li><code>source .venv/bin/activate</code></li>
 <li><code>pip install -r requirements.txt</code></li>
 <li><code>jupyter notebook</code></li>
-</ul>
+<li>Open EDA_ML.ipynb to restart/change notebook</li>
+</ol>
